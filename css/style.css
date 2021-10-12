@@ -200,40 +200,40 @@ header{
   
 
   .about-image{
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 
   }
 
   .about{
-    grid-column: 3 / 3;
+    grid-column: 3 / 5;
   }
 
   .method-image{
-    grid-column: 3 / 3;
+    grid-column: 3 / 5;
 
   }
 
   .method{
-   grid-column: 2 / 3;
+   grid-column: 2 / 4;
   }
 
   .clients-image{
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 
   }
 
   .clients{
-    grid-column: 3 / 3;
+    grid-column: 3 / 5;
 
   }
 
   .contact-image{
-    grid-column: 3 / 3;
+    grid-column: 3 / 5;
 
   }
 
   .contact{
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 
   }
 
