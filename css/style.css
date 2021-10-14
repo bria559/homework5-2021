@@ -65,7 +65,7 @@ nav a{
 
   /* Requirement 2 code here*/
 
-  nav a:hover{
+  a:hover{
     /* text-decoration: solid; */
     border-bottom: 2px solid black;
   }
@@ -79,15 +79,16 @@ nav a{
   transition: top 1s ease-out;
   z-index: 1;
   position: absolute;
-  top: 40px;
+  top: -40px;
   /* Requirement 3a code here*/
   
 }
 
 /* Requirement 3b code here*/
-/* .skip a:focus{
-
-} */
+.skip a:focus{
+   left: 0px;
+   top: 45px;
+}
 
 /* Requirement 4 code here*/
 
@@ -99,7 +100,7 @@ nav a{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto, auto, auto, auto, auto;
+  grid-template-rows: auto auto auto auto auto;
   row-gap: 15px;
 }
 
@@ -113,7 +114,7 @@ header{
   height: 400px; /* Parallax effect */
 
   /* YOUR CODE HERE; */
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   grid-row: 1 / 2;
   background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
@@ -122,53 +123,53 @@ header{
 
 
 .about-image{
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 2 / 3;
+}
+
+.about{
+ grid-column: 2 / 3;
+ grid-row: 2 / 3;
+
+}
+
+.method-image{
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3 / 4;
 }
 
-.about{
- grid-column: 2 / 3;
- grid-row: 3 / 4;
-
-}
-
-.method-image{
-  grid-column: 1 / 4;
-  max-height: 700px;
-  overflow: hidden;
-  grid-row: 5 / 6;
-}
-
 .method{
   grid-column: 2 / 3;
-  grid-row: 5 / 6;
+  grid-row: 3 / 4;
 
 }
 
 .contact-image{
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
-  grid-row: 9 / 10;
+  grid-row: 5 / 6;
 }
 .contact{
   grid-column: 2 / 3;
-  grid-row: 9 / 10;
+  grid-row: 5 / 6;
 
 }
 
 .clients-image{
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   max-height: 700px;
   overflow: hidden;
-  grid-row: 7 / 8;
+  grid-row: 4 / 5;
 }
 
 .clients{
   grid-column: 2 / 3;
-  grid-row: 7/8;
+  grid-row: 4/5;
 
 }
 
@@ -188,8 +189,8 @@ header{
 @media screen and (min-width: 800px){
   nav{
     padding: 30px 0;
-
     /* Your code here */
+    text-align: right;
   }
 
   .container{
