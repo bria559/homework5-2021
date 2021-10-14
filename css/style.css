@@ -65,9 +65,9 @@ nav a{
 
   /* Requirement 2 code here*/
 
-  a:hover{
-    /* text-decoration: solid; */
-    border-bottom: 2px solid black;
+  nav a:hover{
+    text-decoration: underline;
+    /* border-bottom: 2px solid black; */
   }
 
 
